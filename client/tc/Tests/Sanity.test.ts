@@ -1,4 +1,4 @@
-fixture('Pizza Palace')
+fixture('Pizza Place')
     .page('https://testcafe-demo-page.glitch.me/');
 
 test('Submit a form', async t => {
