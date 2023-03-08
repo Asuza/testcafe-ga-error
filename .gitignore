@@ -1,0 +1,26 @@
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# We need to remove this if we switch to PnP
+.pnp.*
+
+node_modules/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+.env
+screenshots/
+
+*.log
+package-lock.json

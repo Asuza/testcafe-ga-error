@@ -1,0 +1,42 @@
+name: UI Testing
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'client/**'
+
+jobs:
+  component_tests:
+    name: Component Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Read Node.js version to install from `.node-version`
+        run: echo "NODE_JS_VERSION=$(cat .node-version)" >> $GITHUB_ENV
+        id: read-node-version
+
+      - name: Install required Node.js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ steps.read-node-version.outputs.NODE_JS_VERSION }}"
+          cache: 'yarn'
+
+      - name: Install modules
+        run: yarn
+
+      - name: Print TestCafe node-version
+        run: yarn run testcafe --version
+
+      - name: Run tests
+        uses: DevExpress/testcafe-action@v0.0.6
+        with:
+          skip-install: true
+          args: "chrome client/tc/Tests/**/*.test.ts --app 'yarn run start-test-server' --app-init-delay 60000 --concurrency 2 --quarantine-mode attemptLimit=3,successThreshold=1 --ts-config-path ./client/tc/tsconfig.json -s takeOnFails=true"
