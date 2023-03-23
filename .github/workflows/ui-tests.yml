@@ -38,5 +38,4 @@ jobs:
       - name: Run tests
         uses: DevExpress/testcafe-action@v0.0.6
         with:
-          skip-install: true
           args: "chrome client/tc/Tests/**/*.test.ts --app 'yarn run start-test-server' --app-init-delay 60000 --concurrency 2 --quarantine-mode attemptLimit=3,successThreshold=1 --ts-config-path ./client/tc/tsconfig.json -s takeOnFails=true"
