@@ -6090,7 +6090,6 @@ __metadata:
     "@vue/eslint-config-typescript": ^9.1.0
     "@vue/test-utils": ^1.0.3
     "@vue/vue2-jest": ^27.0.0-alpha.3
-    core-js: ^3.28.0
     eslint: ^7.32.0
     eslint-config-prettier: ^7.2.0
     eslint-plugin-import: ^2.25.3
@@ -6098,6 +6097,7 @@ __metadata:
     eslint-plugin-vue: ^8.0.3
     eslint-plugin-vuejs-accessibility: ^1.1.0
     express: ^4.17.1
+    pad-thai: "https://github.com/giodamelio/pad-thai.git#commit=468e770d83b1e11a33599345f53436d23b62ff65"
     pnp-webpack-plugin: ^1.6.4
     sass: ^1.58.3
     sass-loader: ^10.0.5
@@ -6469,7 +6469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.28.0, core-js@npm:^3.8.3":
+"core-js@npm:^3.8.3":
   version: 3.28.0
   resolution: "core-js@npm:3.28.0"
   checksum: 3155fd0ec16d0089106b145e9595280a4ea4bde0d7ff26aa14364cd4f1c203baf6620c3025acd284f363d08b9f21104101692766ca9a36ffeee7307bdf3e1881
@@ -11125,6 +11125,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.pad@npm:^4.5.1":
+  version: 4.5.1
+  resolution: "lodash.pad@npm:4.5.1"
+  checksum: 325805c929dad67d61470348046bc92bdad017a9edbda11322cc8945da92a10f943f935d24c340aa6d47cd9a3ff8f5ed6f4a77283266a54e32afae09be0c41ff
+  languageName: node
+  linkType: hard
+
+"lodash.padend@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "lodash.padend@npm:4.6.1"
+  checksum: c2e6e789debf83b98f5c085305cdcfff1067e7a31bda2a110fd765d3c11a99edfbeef570d9ef737ab3212006bdb8114e77622e518c18c1fce52b8fdfd9dab685
+  languageName: node
+  linkType: hard
+
+"lodash.padstart@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "lodash.padstart@npm:4.6.1"
+  checksum: 0d6ad92c626d351db85de539e41df3238d7d36c5fbfc5f57c4f060c90c73ad9f1db566463487795fdf0bf290a8f133189a0bd91d051032f6eb2d15b7e1863b5e
+  languageName: node
+  linkType: hard
+
 "lodash.truncate@npm:^4.4.2":
   version: 4.4.2
   resolution: "lodash.truncate@npm:4.4.2"
@@ -12378,6 +12399,17 @@ __metadata:
   version: 2.2.0
   resolution: "p-try@npm:2.2.0"
   checksum: f8a8e9a7693659383f06aec604ad5ead237c7a261c18048a6e1b5b85a5f8a067e469aa24f5bc009b991ea3b058a87f5065ef4176793a200d4917349881216cae
+  languageName: node
+  linkType: hard
+
+"pad-thai@https://github.com/giodamelio/pad-thai.git#commit=468e770d83b1e11a33599345f53436d23b62ff65":
+  version: 1.0.2
+  resolution: "pad-thai@https://github.com/giodamelio/pad-thai.git#commit=468e770d83b1e11a33599345f53436d23b62ff65"
+  dependencies:
+    lodash.pad: ^4.5.1
+    lodash.padend: ^4.6.1
+    lodash.padstart: ^4.6.1
+  checksum: 196f4209481dd33209f2e11f8f466d4d107a1fe51af705e0a8b2728d3c000d486833f5c5e93e7ddb56166c7b8db85a957c4306a76e541be6225e6daa1d764406
   languageName: node
   linkType: hard
 
@@ -14003,14 +14035,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.4, semver@npm:^7.3.6, semver@npm:^7.3.7, semver@npm:^7.3.8":
-  version: 7.3.8
-  resolution: "semver@npm:7.3.8"
+"semver@npm:^7.2.1":
+  version: 7.5.0
+  resolution: "semver@npm:7.5.0"
   dependencies:
     lru-cache: ^6.0.0
   bin:
     semver: bin/semver.js
-  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
+  checksum: 2d266937756689a76f124ffb4c1ea3e1bbb2b263219f90ada8a11aebebe1280b13bb76cca2ca96bdee3dbc554cbc0b24752eb895b2a51577aa644427e9229f2b
   languageName: node
   linkType: hard
 
@@ -14022,6 +14054,17 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 5eafe6102bea2a7439897c1856362e31cc348ccf96efd455c8b5bc2c61e6f7e7b8250dc26b8828c1d76a56f818a7ee907a36ae9fb37a599d3d24609207001d60
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.4, semver@npm:^7.3.6, semver@npm:^7.3.7, semver@npm:^7.3.8":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
   languageName: node
   linkType: hard
 
