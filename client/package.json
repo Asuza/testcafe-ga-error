@@ -6,9 +6,9 @@
     "start-test-server": "vue-cli-service serve --mode production --port 8081"
   },
   "dependencies": {
-    "core-js": "^3.28.0",
-    "eslint": "https://github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb",
+    "eslint": "^7.32.0",
     "express": "^4.17.1",
+    "pad-thai": "https://github.com/giodamelio/pad-thai.git#commit=468e770d83b1e11a33599345f53436d23b62ff65",
     "sass": "^1.58.3",
     "sass-loader": "^10.0.5",
     "vee-validate": "^3.4.3",
