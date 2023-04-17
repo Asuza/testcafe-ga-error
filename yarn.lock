@@ -6091,7 +6091,7 @@ __metadata:
     "@vue/test-utils": ^1.0.3
     "@vue/vue2-jest": ^27.0.0-alpha.3
     core-js: ^3.28.0
-    eslint: "git+ssh://git@github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb"
+    eslint: "https://github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb"
     eslint-config-prettier: ^7.2.0
     eslint-plugin-import: ^2.25.3
     eslint-plugin-no-only-tests: ^2.6.0
@@ -7807,9 +7807,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@git+ssh://git@github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb":
+"eslint@https://github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb":
   version: 7.32.0
-  resolution: "eslint@git+ssh://git@github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb"
+  resolution: "eslint@https://github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb"
   dependencies:
     "@babel/code-frame": 7.12.11
     "@eslint/eslintrc": ^0.4.3
@@ -7853,7 +7853,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: ./bin/eslint.js
-  checksum: 2dea99eba3b532926e725aee0f11a602f9e6b5e4473a18313e8cda7471e0695b6698e5ffd3090bbf6d1a077ae6f0a51a3be63f904a41f154f386660cc503d791
+  checksum: d42c5bc1b51690d4170424fd2a0123bc82295cb3d132585c20fecbb7a9f313c7903e73f3dac8197d8d2a6a18c67b7e2b7848e5bd1578b900c57f1d053d18499f
   languageName: node
   linkType: hard
 

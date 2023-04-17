@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "core-js": "^3.28.0",
-    "eslint": "git+ssh://git@github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb",
+    "eslint": "https://github.com/eslint/eslint.git#commit=83cc8a6823d7729297b6814a644cca770cb99dbb",
     "express": "^4.17.1",
     "sass": "^1.58.3",
     "sass-loader": "^10.0.5",
